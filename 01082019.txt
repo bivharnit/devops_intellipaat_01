@@ -1,0 +1,168 @@
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ git configg --global user.name "harshitha.s"
+git: 'configg' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ git config --global user.name "harshitha.s"
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ git config --global user.name "s.harshith27@gmail.com"
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        devops_notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ git add .
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   devops_notes.txt
+
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ git commit -m "myfirstcommit"
+[master 0e5e521] myfirstcommit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 devops_notes.txt
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ ped
+bash: ped: command not found
+pwd
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ pwd
+/c/Users/harshitha.s/devops_intellipaat_30July
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ cd ^C
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_30July (master)
+$ cd /c/Users/harshitha.s/
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ pwd
+/c/Users/harshitha.s
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ git --version
+git version 2.22.0.windows.1
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ git config --global user.name "bivharnit"
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ git config --global user.email "s.harshitha27@gmail.com"
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ git clone https://github.com/bivharnit/devops_intellipaat_01.git
+Cloning into 'devops_intellipaat_01'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ ls -ld devops_intellipaat_01
+drwxr-xr-x 1 harshitha.s 1049089 0 Aug  1 08:26 devops_intellipaat_01/
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ ls -lrta devops_intellipaat_01
+total 17
+drwxr-xr-x 1 harshitha.s 1049089  0 Aug  1 08:26 ../
+-rw-r--r-- 1 harshitha.s 1049089 48 Aug  1 08:26 README.md
+drwxr-xr-x 1 harshitha.s 1049089  0 Aug  1 08:26 ./
+drwxr-xr-x 1 harshitha.s 1049089  0 Aug  1 08:26 .git/
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ ^C
+
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+harshitha.s@BRILAP874 MINGW64 ~
+$ cd devops_intellipaat_01
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ ls -lrts
+total 1
+1 -rw-r--r-- 1 harshitha.s 1049089 48 Aug  1 08:26 README.md
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ ls -lrta
+total 17
+drwxr-xr-x 1 harshitha.s 1049089  0 Aug  1 08:26 ../
+-rw-r--r-- 1 harshitha.s 1049089 48 Aug  1 08:26 README.md
+drwxr-xr-x 1 harshitha.s 1049089  0 Aug  1 08:26 ./
+drwxr-xr-x 1 harshitha.s 1049089  0 Aug  1 08:26 .git/
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ git fetch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/bivharnit/devops_intellipaat_01
+ * [new branch]      Harshitha  -> origin/Harshitha
+ * [new branch]      developer1 -> origin/developer1
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ git pull
+Already up to date.
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/Harshitha
+  origin/developer1
+  origin/master
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ git branch
+* master
+
+harshitha.s@BRILAP874 MINGW64 ~/devops_intellipaat_01 (master)
+$ pwd
+/c/Users/harshitha.s/devops_intellipaat_01
